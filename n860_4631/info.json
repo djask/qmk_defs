@@ -1,0 +1,22 @@
+{
+    "manufacturer": "djask",
+    "keyboard_name": "Fujitsu N86D-4631-R101/0 BUHIN",
+    "maintainer": "djask",
+    "bootloader": "caterina",
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": true,
+        "command": false,
+        "console": true,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": true
+    },
+    "processor": "atmega32u4",
+    "url": "",
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x4631",
+        "vid": "0x2FB2"
+    }
+}
