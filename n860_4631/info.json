@@ -1,5 +1,5 @@
 {
-    "manufacturer": "djask",
+    "manufacturer": "Fujitsu",
     "keyboard_name": "Fujitsu N86D-4631-R101/0 BUHIN",
     "maintainer": "djask",
     "bootloader": "caterina",
@@ -9,8 +9,8 @@
         "command": false,
         "console": true,
         "extrakey": true,
-        "mousekey": true,
-        "nkro": true
+        "mousekey": false,
+        "nkro": false
     },
     "processor": "atmega32u4",
     "url": "",
