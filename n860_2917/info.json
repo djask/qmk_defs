@@ -1,0 +1,31 @@
+{
+    "manufacturer": "EPSON",
+    "keyboard_name": "PC286KB",
+    "maintainer": "djask",
+    "diode_direction": "COL2ROW",
+    "processor": "STM32F103",
+    "board": "STM32_F103_STM32DUINO",
+    "features": {
+        "bootmagic": true,
+        "command": false,
+        "console": false,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": true
+    },
+    "matrix_pins": {
+        "rows": ["C14", "C15", "A0", "A1", "A2", "A3", "A4", "A5", "A6", "A7", "B0", "B1"],
+        "cols": ["B12", "B13", "B14", "B15", "A8","A15", "B3", "B4", "B5", "B6", "B7"]
+    },
+    "indicators": {
+        "caps_lock": "B10",
+        "kana": "B11",
+        "on_state": 1
+    },
+    "url": "",
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x2917",
+        "vid": "0x04B8"
+    }
+}
