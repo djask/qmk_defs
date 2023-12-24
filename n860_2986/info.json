@@ -1,0 +1,22 @@
+{
+    "manufacturer": "Fujitsu",
+    "keyboard_name": "Fujitsu N86D-2986-R090/01 HANDAMEN",
+    "maintainer": "djask",
+    "bootloader": "caterina",
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": true,
+        "command": false,
+        "console": true,
+        "extrakey": true,
+        "mousekey": false,
+        "nkro": true
+    },
+    "processor": "atmega32u4",
+    "url": "",
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x2986",
+        "vid": "0x2FB2"
+    }
+}
