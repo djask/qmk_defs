@@ -54,7 +54,6 @@ and the total rows in the MATRIX*/
 
 // Break is wired directly to ground, extra input pin can be wired to switch to detect keypress
 // #define MATRIX_BREAK_PIN B0
-#define UNUSED_PINS
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 5

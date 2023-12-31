@@ -62,7 +62,7 @@ k90,      k11,             k10,      k20,             kb1,                      
     {KC_NO, ka1, ka2, ka3, ka4, ka5, ka6, ka7}, \
     {KC_NO, kb1, KC_NO, kb3, kb4, kb5, kb6, kb7}, \
     {kc0, kc1, kc2, kc3, KC_NO, kc5, kc6, kc7}, \
-    {kd0, kd1, kd2, kd3, KC_NO, KC_NO, kd6, kd7}, \
+    {kd0, kd1, kd2, kd3, kd4, KC_NO, kd6, kd7}, \
     {ke0, ke1, ke2, ke3, ke4, ke5, ke6, ke7}, \
     {KC_NO, kf1, kf2, kf3, kf4, kf5, kf6, KC_NO} \
 }

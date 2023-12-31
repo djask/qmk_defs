@@ -26,9 +26,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 
 [1] = LAYOUT(
-    _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   _______,                    KC_PSCR, KC_SCRL, KC_BRK,  _______, KC_MINS, KC_EQL,
+    _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   _______,                    KC_PSCR, KC_SCRL, KC_BRK,  KC_MINS, KC_EQL,  _______,
     _______, KC_F5,   KC_F6,   KC_F7,   KC_F8,   _______,                    KC_INS,  KC_HOME, KC_PGUP, KC_LBRC, KC_RBRC, _______,
-    _______, KC_F9,   KC_F10,  KC_F11,  KC_F12,  _______,                    KC_DEL,  KC_END,  KC_PGDN, KC_LPRN, KC_RPRN, KC_PIPE,
+    KC_CAPS, KC_F9,   KC_F10,  KC_F11,  KC_F12,  _______,                    KC_DEL,  KC_END,  KC_PGDN, KC_LPRN, KC_RPRN, _______,
     _______, _______, _______, _______, _______, _______, NK_TOGG,  _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, _______, _______,
                       _______, _______, _______, _______, _______,  _______, _______, KC_MINS, _______, _______
 ),
@@ -45,7 +45,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 #if defined(ENCODER_MAP_ENABLE)
 const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
-    [0] =   { ENCODER_CCW_CW(KC_WH_D,KC_WH_U), ENCODER_CCW_CW(KC_WH_L, KC_WH_R) },
+    [0] =   { ENCODER_CCW_CW(KC_WH_U,KC_WH_D), ENCODER_CCW_CW(KC_WH_L, KC_WH_R) },
     [1] =   { ENCODER_CCW_CW(KC_PGUP, KC_PGDN), ENCODER_CCW_CW(KC_VOLD, KC_VOLU) },
     [2] =   { ENCODER_CCW_CW(_______, _______), ENCODER_CCW_CW(_______, _______) },
 };
@@ -69,9 +69,11 @@ void write_int_ln(const char* prefix, uint8_t value) {
 }
 
 static void print_status_narrow(void) {
-    oled_write_ln_P(PSTR("SofleChoc _____"), false);
+    oled_write_ln_P(PSTR("KB   Stat _____"), false);
 
-    oled_write_P(PSTR("\n\n\n\n\n\n\n"), false);
+    oled_write_P(PSTR("\n\n\n\n\n"), false);
+
+    // led states
     led_t led_usb_state = host_keyboard_led_state();
     if (led_usb_state.caps_lock) {
         oled_write_ln_P(PSTR(" CAP "), true);
@@ -81,6 +83,12 @@ static void print_status_narrow(void) {
 
     if (led_usb_state.num_lock) {
         oled_write_ln_P(PSTR(" NUM "), true);
+    } else {
+        oled_write_ln_P(PSTR("     "), false);
+    }
+
+    if (led_usb_state.scroll_lock) {
+        oled_write_ln_P(PSTR(" SCR "), true);
     } else {
         oled_write_ln_P(PSTR("     "), false);
     }
