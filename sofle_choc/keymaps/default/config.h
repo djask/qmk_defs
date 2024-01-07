@@ -15,11 +15,7 @@
  */
 #pragma once
 
-// Plug USB into the left half of the keyboard
-// see https://docs.qmk.fm/#/feature_split_keyboard?id=setting-handedness
-//#define MASTER_LEFT
 #define EE_HANDS
-#define SPLIT_WPM_ENABLE
 #define SPLIT_OLED_ENABLE
 
 // Enabling this option changes the startup behavior to listen for an
@@ -30,6 +26,11 @@
 //
 // I've found this helps with some ProMicros where the slave does not boot
 #define SPLIT_USB_DETECT
+
+
+// Better movement configuration
+#define MK_KINETIC_SPEED
+
 
 #ifdef RGB_MATRIX_ENABLE
 

@@ -18,4 +18,3 @@ LTO_ENABLE = yes
 VIA_ENABLE = no
 
 MOUSEKEYS_ENABLE = yes
-WPM_ENABLE = yes
