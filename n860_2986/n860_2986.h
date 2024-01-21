@@ -43,7 +43,7 @@
 k06,    k16,  k26, k36, k46, k56,     k66, k76, k86,              k96, ka6, k07, k17, k27,  ke2, ke3, ke4, ke6, ke7, \
                                                                             k37, k47, k57,  kf2, kf3, kf4, kf5, kf6, \
   k15, k25, k35, k45, k55, k65, k75, k85, k95, ka5, kb5, kc5,      kd6,     k67, k77, k87,  \
-k04,  k14, k24, k34, k44, k54, k64, k74, k84, k94, ka4, kb4, kd4,                           ke5, kd1, kc2, kd2, ke0, \
+k04,  k14, k24, k34, k44, k54, k64, k74, k84, k94, ka4, kb4, kd4,                           ke5, kd1, kc2, kd2, kf7, \
  k03,  k13, k23, k33, k43, k53, k63, k73, k83, k93, ka3, kb3,      kc3,          k97,            k91, ka1, kc1, kc6, \
  k80,   k12, k22, k32, k42, k52, k62, k72, k82, k92,             ka2,       ka7, kc7, kb7,       k61, k71, k81, kb6, \
 k90,      k11,             k10,      k20,             kb1,                                     kd3,   kc0, kd0, \
@@ -63,7 +63,7 @@ k90,      k11,             k10,      k20,             kb1,                      
     {KC_NO, kb1, KC_NO, kb3, kb4, kb5, kb6, kb7}, \
     {kc0, kc1, kc2, kc3, KC_NO, kc5, kc6, kc7}, \
     {kd0, kd1, kd2, kd3, kd4, KC_NO, kd6, kd7}, \
-    {ke0, ke1, ke2, ke3, ke4, ke5, ke6, ke7}, \
-    {KC_NO, kf1, kf2, kf3, kf4, kf5, kf6, KC_NO} \
+    {KC_NO, ke1, ke2, ke3, ke4, ke5, ke6, ke7}, \
+    {KC_NO, kf1, kf2, kf3, kf4, kf5, kf6, kf7} \
 }
 #define kEYMAP LAYOUT
