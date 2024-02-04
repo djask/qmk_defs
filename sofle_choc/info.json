@@ -2,7 +2,7 @@
     "keyboard_name": "Sofle Choc",
     "url": "https://github.com/josefadamcik/SofleKeyboard",
     "maintainer": "djask",
-    "manufacturer": "djask",
+    "manufacturer": "Custom",
     "features": {
         "nkro": true,
         "mousekey": true
