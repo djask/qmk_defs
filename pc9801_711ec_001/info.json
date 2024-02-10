@@ -1,0 +1,22 @@
+{
+    "manufacturer": "NEC",
+    "keyboard_name": "PC9801 Keyboard",
+    "maintainer": "djask",
+    "bootloader": "caterina",
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": true,
+        "command": false,
+        "console": true,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": false
+    },
+    "processor": "atmega32u4",
+    "url": "",
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x0014",
+        "vid": "0x0409"
+    }
+}
